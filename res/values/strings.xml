@@ -29,6 +29,9 @@
     <string name="dsp_settings_bluetooth">DSP settings - Bluetooth device</string>
     <string name="dsp_settings_usb">DSP settings - USB device</string>
     <string name="dsp_settings_wm8994">DSP settings - WM8994</string>
+    <string name="pref_dirac_title">Dirac HD</string>
+    <string name="pref_dirac_summary_on">Dirac HD is enabled</string>
+    <string name="pref_dirac_summary_off">Dirac HD is disabled</string>
     <string name="pref_dsp_title">Dynamic range compression</string>
     <string name="pref_dsp_summary_on">Compression is enabled</string>
     <string name="pref_dsp_summary_off">Compression is disabled</string>

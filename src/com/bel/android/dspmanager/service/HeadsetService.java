@@ -17,6 +17,8 @@ import android.os.IBinder;
 import android.util.Log;
 
 import com.bel.android.dspmanager.activity.DSPManager;
+import com.bel.android.dspmanager.activity.FxUtils;
+import com.bel.android.dspmanager.activity.FxUtils.FX;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,11 +53,22 @@ public class HeadsetService extends Service {
         private final BassBoost mBassBoost;
         /** Session-specific virtualizer */
         private final Virtualizer mVirtualizer;
+        /** Session-specific dirac */
+        public final DiracFX mDirac;
 
         protected EffectSet(int sessionId) {
             try {
-                mCompression = new AudioEffect(EFFECT_TYPE_VOLUME,
-                        AudioEffect.EFFECT_TYPE_NULL, 0, sessionId);
+                if (FxUtils.isFxSupported(FX.Dirac)) {
+                    mDirac = new DiracFX(0, sessionId);
+                } else {
+                    mDirac = null;
+                }
+                if (FxUtils.isFxSupported(FX.Compression)) {
+                    mCompression = new AudioEffect(EFFECT_TYPE_VOLUME,
+                            AudioEffect.EFFECT_TYPE_NULL, 0, sessionId);
+                } else {
+                    mCompression = null;
+                }
             } catch (IllegalArgumentException e) {
                 throw new RuntimeException(e);
             } catch (UnsupportedOperationException e) {
@@ -68,10 +81,11 @@ public class HeadsetService extends Service {
         }
 
         protected void release() {
-            mCompression.release();
+            if (mCompression != null) mCompression.release();
             mEqualizer.release();
             mBassBoost.release();
             mVirtualizer.release();
+            if (mDirac != null) mDirac.release();
         }
     }
 
@@ -273,10 +287,12 @@ public class HeadsetService extends Service {
 
     private void updateDsp(SharedPreferences prefs, EffectSet session) {
         try {
-            session.mCompression.setEnabled(prefs.getBoolean("dsp.compression.enable", false));
-            session.mCompression.setParameter(session.mCompression.intToByteArray(0),
-                    session.mCompression.shortToByteArray(
-                            Short.valueOf(prefs.getString("dsp.compression.mode", "0"))));
+            if (FxUtils.isFxSupported(FX.Compression)) {
+                session.mCompression.setEnabled(prefs.getBoolean("dsp.compression.enable", false));
+                session.mCompression.setParameter(session.mCompression.intToByteArray(0),
+                        session.mCompression.shortToByteArray(
+                                Short.valueOf(prefs.getString("dsp.compression.mode", "0"))));
+            }
         } catch (Exception e) {
             Log.e(TAG, "Error enabling compression!", e);
         }
@@ -318,6 +334,15 @@ public class HeadsetService extends Service {
                     Short.valueOf(prefs.getString("dsp.headphone.mode", "0")));
         } catch (Exception e) {
             Log.e(TAG, "Error enabling virtualizer!");
+        }
+
+        if (FxUtils.isFxSupported(FX.Dirac)) {
+            try {
+                session.mDirac.setEnabled(prefs.getBoolean("dsp.dirac.enable", false));
+                session.mDirac.setFactorLevel(prefs.getInt("dsp.dirac.mode", 0));
+            } catch (Exception e) {
+                Log.e(TAG, "Error enabling dirac!", e);
+            }
         }
     }
 }
