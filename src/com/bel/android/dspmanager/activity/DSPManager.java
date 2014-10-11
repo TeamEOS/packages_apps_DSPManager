@@ -148,12 +148,6 @@ class MyAdapter extends FragmentPagerAdapter {
         tmpTitles.add(res.getString(R.string.bluetooth_title).toUpperCase());
         tmpTitles.add(res.getString(R.string.usb_title).toUpperCase());
 
-        // Determine if WM8994 is supported
-        if (WM8994.isSupported(context)) {
-            tmpEntries.add(WM8994.NAME);
-            tmpTitles.add(res.getString(R.string.wm8994_title).toUpperCase());
-        }
-
         entries = (String[]) tmpEntries.toArray(new String[tmpEntries.size()]);
         titles = (String[]) tmpTitles.toArray(new String[tmpTitles.size()]);
     }
@@ -174,16 +168,10 @@ class MyAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-
-        // Determine if fragment is WM8994
-        if (entries[position].equals(WM8994.NAME)) {
-            return new WM8994();
-        } else {
-            final DSPScreen dspFragment = new DSPScreen();
-            Bundle b = new Bundle();
-            b.putString("config", entries[position]);
-            dspFragment.setArguments(b);
-            return dspFragment;
-        }
+        final DSPScreen dspFragment = new DSPScreen();
+        Bundle b = new Bundle();
+        b.putString("config", entries[position]);
+        dspFragment.setArguments(b);
+        return dspFragment;
     }
 }
