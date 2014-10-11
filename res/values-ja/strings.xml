@@ -7,6 +7,8 @@
     <string name="dsp_settings_headset">DSP 設定 - ヘッドフォン</string>
     <string name="dsp_settings_speaker">DSP 設定 - スピーカー</string>
     <string name="dsp_settings_bluetooth">DSP 設定 - Bluetooth デバイス</string>
+    <string name="pref_dirac_summary_on">Dirac HD は有効</string>
+    <string name="pref_dirac_summary_off">Dirac HD は無効</string>
     <string name="pref_dsp_title">ダイナミックレンジコンプレッション</string>
     <string name="pref_dsp_summary_on">コンプレッションは有効</string>
     <string name="pref_dsp_summary_off">コンプレッションは無効</string>

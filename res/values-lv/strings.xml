@@ -22,6 +22,8 @@
     <string name="dsp_settings_speaker">DSP iestatījumi - Skaļrunis</string>
     <string name="dsp_settings_bluetooth">DSP iestatījumi - Bluetooth</string>
     <string name="audio_effects">Audio efekti</string>
+    <string name="pref_dirac_summary_on">Dirac HD ieslēgta</string>
+    <string name="pref_dirac_summary_off">Dirac HD izslēgta</string>
     <string name="pref_dsp_title">Dinamiskā diapazona saspiešana</string>
     <string name="pref_dsp_summary_on">Saspiešana ieslēgta</string>
     <string name="pref_dsp_summary_off">Saspiešana izslēgta</string>

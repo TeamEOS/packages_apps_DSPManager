@@ -14,13 +14,6 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="microphone_recording_presets">
-    <item>ئەسلى</item>
-    <item>تەڭپۇڭ</item>
-    <item>يۇقىرى سەزگۈرلۈك</item>
-    <item>ۋاراڭ-چۇرۇڭ مۇھىت</item>
-  </string-array>
-
   <string-array name="headphone_modes">
     <item>ئىشخانا</item>
     <item>ئۆي</item>
@@ -49,10 +42,4 @@
     <item>ئوتتۇراھال</item>
     <item>كەسكىن</item>
   </string-array>
-
-  <string-array name="wm8994_bassboost_modes">
-    <item>ئۆلچەملىك</item>
-    <item>كىچىك ياڭراتقۇلار</item>
-  </string-array>
-
 </resources>

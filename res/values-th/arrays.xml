@@ -14,18 +14,13 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="microphone_recording_presets">
-    <item>ดั้งเดิม</item>
-    <item>สมดุล</item>
-    <item>อ่อนไหว</item>
-    <item>สภาพแวดล้อมดัง</item>
-  </string-array>
   <string-array name="headphone_modes">
     <item>สตูดิโอ</item>
     <item>ห้อง</item>
     <item>ห้องใหญ่</item>
     <item>เวที</item>
   </string-array>
+
   <string-array name="equalizer_loudness_modes">
     <item>ปิด</item>
     <item>อ่อนที่สุด</item>
@@ -35,18 +30,16 @@
     <item>แรงมาก</item>
     <item>แรงที่สุด</item>
   </string-array>
+
   <string-array name="compression_modes">
     <item>เงียบ</item>
     <item>ปานกลาง</item>
     <item>สุดขีด</item>
   </string-array>
+
   <string-array name="bassboost_modes">
     <item>เงียบ</item>
     <item>ปานกลาง</item>
     <item>สุดขีด</item>
-  </string-array>
-  <string-array name="wm8994_bassboost_modes">
-    <item>มาตราฐาย</item>
-    <item>ลำโพงเล็ก</item>
   </string-array>
 </resources>

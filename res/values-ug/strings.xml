@@ -28,7 +28,8 @@
     <string name="dsp_settings_speaker">DSP تەڭشەكلەر - تېلېفون ياڭراتقۇ</string>
     <string name="dsp_settings_bluetooth">DSP تەڭشەكلەر - كۆكچىش ئۈسكۈنە</string>
     <string name="dsp_settings_usb">DSP تەڭشەكلەر - USB ئۈسكۈنە</string>
-    <string name="dsp_settings_wm8994">DSP تەڭشەكلەر - WM8994</string>
+    <string name="pref_dirac_summary_on">Dirac HD پىرىسلاش</string>
+    <string name="pref_dirac_summary_off">Dirac HD پىرىسلاش</string>
     <string name="pref_dsp_title">ھەرىكەتچان دائىرىنى پىرىسلاش</string>
     <string name="pref_dsp_summary_on">پىرىسلاش قوزغىتىلدى</string>
     <string name="pref_dsp_summary_off">پىرىسلاش چەكلەندى</string>
@@ -66,51 +67,6 @@
     <string name="eq_preset_treble_reducer">ئاۋازنى ئۈچ ھەسسە پەسەيتكۈچ</string>
     <string name="eq_preset_vocal_booster">ئاۋاز يۇقىرىلاتقۇچ</string>
     <string name="eq_preset_custom">ئىختىيارى</string>
-
-    <!-- WM8994 -->
-    <!-- Categories -->
-    <string name="category_wm8994_internal_speaker">ياڭراتقۇ</string>
-    <string name="category_wm8994_signal_processing">سىگنال بىر تەرەپ قىلغۇچ</string>
-    <string name="category_wm8994_headphone_amp">تىڭشىغۇچ</string>
-    <string name="category_wm8994_codec_optimization">كودلىغۇچ كود يەشكۈچ ئەلالاشتۇرۇش</string>
-    <string name="category_wm8994_dac_config">رەقەملىك/تەقلىد ئالماشتۇرغۇچ تەڭشەكلىرى</string>
-    <string name="category_wm8994_analog_path">تەقلىد يول سەپلىمىسى</string>
-    <string name="category_wm8994_mic_settings">مىكفورون تەڭشەكلىرى:</string>
-    <string name="category_wm8994_microphone_recording">مىكروفون</string>
-
-    <!-- Titles/Summaries -->
-    <string name="wm8994_settings_title_head">ئاۋاز تەڭشەكلىرى</string>
-    <string name="wm8994_settings_title_subhead">ئاۋاز تەڭشەكلىرى</string>
-    <string name="wm8994_settings_summary_head">WM8994 ئاۋاز بىر تەرەپ قىلغۇچ نىڭ ئالىي تىزگىنلىرى</string>
-    <string name="pref_wm8994_microphone_recording_title">ئاۋاز ئېلىشنىڭ ئالدىن تەڭشەكلىرى</string>
-    <string name="pref_wm8994_headphone_amp_title">ئاۋاز كۈچەيتىش دەرىجىسى</string>
-    <string name="pref_wm8994_headphone_amp_summary">ئىختىيارىي تەقلىد ئېشىش قۇۋۋىتى</string>
-    <string name="pref_wm8994_headphone_amp_dlg_title">تىڭشىغۇچ ئاۋاز كۈچەيتىش دەرىجىسى</string>
-    <string name="pref_wm8994_headphone_amp_dlg_desc">تەقلىد ئېشىش قۇۋۋىتى</string>
-    <string name="pref_wm8994_bass_boost_enable_title">تۆۋەن ئاۋازنى يۇقىرىلىتىش</string>
-    <string name="pref_wm8994_bass_boost_enable_summary">تۆۋەن ئاۋازنى يۇقىرىلىتىشنىڭ ئالىي تىزگىنلىرى</string>
-    <string name="pref_wm8994_bass_boost_title">تۆۋەن ئاۋازنى يۇقىرىلىتىش دائىرىسى</string>
-    <string name="pref_wm8994_bass_boost_summary">ئالىي ھەرىكەتچان دائىرە باشقۇرۇش</string>
-    <string name="pref_wm8994_bass_boost_preset_title">تۆۋەن ئاۋازنى يۇقىرىلىتىشنىڭ ئالدىن تەڭشىكى</string>
-    <string name="pref_wm8994_bass_boost_dlg_title">تۆۋەن ئاۋازنى يۇقىرىلىتىش</string>
-    <string name="pref_wm8994_bass_boost_gain_dlg_desc">ئېشىش</string>
-    <string name="pref_wm8994_bass_boost_range_dlg_desc">تۆۋەن ئاۋازنى يۇقىرىلىتىش دائىرىسى</string>
-    <string name="pref_wm8994_control_enable_title">WM8994 تىزگىننى قوزغات</string>
-    <string name="pref_wm8994_control_enable_summary">WM8994 ئاۋاز بىر تەرەپ قىلغۇچنىڭ ئالىي تىزگىنلىرى</string>
-    <string name="pref_wm8994_speaker_tuning_title">نەغمە تەڭشەش</string>
-    <string name="pref_wm8994_speaker_tuning_summary">قاتتىق دېتال تەڭپۇڭلاشتۇرغۇچنى قايتا تەڭشەپ تېخىمۇ تۆۋەن ئاۋاز ۋە تەڭپۇڭلاشتۇرۇش ئۈنۈمىگە ئېرىشىدۇ</string>
-    <string name="pref_wm8994_mono_downmix_title">يەككە يول ئاۋازنى ئارىلاشتۇرۇش</string>
-    <string name="pref_wm8994_mono_downmix_summary">سىتېرېئو ئاۋازنى يەككە يوللۇق ئاۋازغا بىرلەشتۈرىدۇ (تىڭشىغۇچقا ئوخشاش ئۈسكۈنىگە ستېرېئو ئاۋاز چىقىرىشقا ئىشلىتىدۇ)</string>
-    <string name="pref_wm8994_stereo_expansion_title">سىتېرېئو ئاۋازنى كېڭەيتىش</string>
-    <string name="pref_wm8994_stereo_expansion_summary">سىگنالنى بىر تەرەپ قىلىش ئارقىلىق سىتېرېئو ئاۋازنى كېڭەيتىدۇ</string>
-    <string name="pref_wm8994_dac_direct_title">بىۋاستە رەقەم/تەقلىد ئالماشتۇرۇش</string>
-    <string name="pref_wm8994_dac_direct_summary">قانال ئارىلاشتۇرغۇچتىن ئايلىنىپ ئۆتۈپ بىۋاستە رەقەم/تەقلىد ئالماشتۇرغۇچنى زىيارەت قىلىپ، تېخىمۇ ئېنىق ئاۋاز شەكىللەندۈرىدۇ (سىگنال كۈچلۈك شاۋقۇن تۆۋەن)</string>
-    <string name="pref_wm8994_dac_osr128_title">Hi-fi چال</string>
-    <string name="pref_wm8994_dac_osr128_summary">رەقەم/تەقلىد ئالماشتۇرغۇچ 128 ھەسسە زىچ ئۆرنەك ئېلىپ، نەغمە چالغاندا ئاۋاز سۈپىتى تېخىمۇ ئېنىق</string>
-    <string name="pref_wm8994_adc_osr128_title">Hi-fi ئاۋاز ئېلىش</string>
-    <string name="pref_wm8994_adc_osr128_summary">تەقلىد/رەقەم ئالماشتۇرغۇچ 128 ھەسسە زىچ ئۆرنەك ئېلىپ، ئاۋازغا ئېلىش سۈپىتىنى ئۆستۈرىدۇ</string>
-    <string name="pref_wm8994_fll_tuning_title">ئاۋازلىق سائەت تەڭشەش</string>
-    <string name="pref_wm8994_fll_tuning_summary">تەڭشەلگەن WM8994 ئاۋاز مەنبەسى ئارقىلىق ئاۋاز سۈپىتىنى ئۆستۈرىدۇ</string>
 
     <string name="help_title">ياردەم</string>
     <string name="help_text"><b>DSP باشقۇرغۇچ دېگەن نېمە؟</b>
