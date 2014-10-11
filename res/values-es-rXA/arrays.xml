@@ -15,13 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="microphone_recording_presets">
-    <item>Orixinal</item>
-    <item>Equilibráu</item>
-    <item>Alta sensibilidá</item>
-    <item>Entornu ruidosu</item>
-  </string-array>
-
   <string-array name="headphone_modes">
     <item>Estudiu</item>
     <item>Habitación</item>
@@ -50,10 +43,4 @@
     <item>Moderáu</item>
     <item>Fuerte</item>
   </string-array>
-
-  <string-array name="wm8994_bassboost_modes">
-    <item>Estándar</item>
-    <item>Altavoces pequeños</item>
-  </string-array>
-
 </resources>

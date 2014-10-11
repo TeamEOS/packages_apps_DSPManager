@@ -7,6 +7,8 @@
     <string name="dsp_settings_headset">DSP-Inställningar - Headset</string>
     <string name="dsp_settings_speaker">DSP-Inställningar - Telefonhögtalare</string>
     <string name="dsp_settings_bluetooth">DSP-Inställningar - Bluetooth-enhet</string>
+    <string name="pref_dirac_summary_on">Dirac HD är aktiverat</string>
+    <string name="pref_dirac_summary_off">Dirac HD är inaktiverat</string>
     <string name="pref_dsp_title">Dynamikkompression</string>
     <string name="pref_dsp_summary_on">Kompression är aktiverat</string>
     <string name="pref_dsp_summary_off">Kompression är inaktiverat</string>

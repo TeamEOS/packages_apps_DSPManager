@@ -14,18 +14,13 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="microphone_recording_presets">
-    <item>Originál</item>
-    <item>Vyvážené</item>
-    <item>Vysoká citlivosť</item>
-    <item>Hlučné prostredie</item>
-  </string-array>
   <string-array name="headphone_modes">
     <item>Štúdio</item>
     <item>Miestnosť</item>
     <item>Veľká miestnosť</item>
     <item>Javisko</item>
   </string-array>
+
   <string-array name="equalizer_loudness_modes">
     <item>Zakázané</item>
     <item>Najslabšia</item>
@@ -35,18 +30,16 @@
     <item>Silnejšia</item>
     <item>Najsilnejšia</item>
   </string-array>
+
   <string-array name="compression_modes">
     <item>Nepatrná</item>
     <item>Stredná</item>
     <item>Extrémna</item>
   </string-array>
+
   <string-array name="bassboost_modes">
     <item>Nepatrná</item>
     <item>Stredná</item>
     <item>Extrémna</item>
-  </string-array>
-  <string-array name="wm8994_bassboost_modes">
-    <item>Štandardné</item>
-    <item>Malé reproduktory</item>
   </string-array>
 </resources>

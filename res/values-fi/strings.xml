@@ -8,6 +8,8 @@
     <string name="dsp_settings_headset">DSP Asetukset - Kuulokkeet</string>
     <string name="dsp_settings_speaker">DSP Asetukset - Puhelimen kaiutin</string>
     <string name="dsp_settings_bluetooth">DSP Asetukset - Bluetooth-laite</string>
+    <string name="pref_dirac_summary_on">Dirac HD päällä</string>
+    <string name="pref_dirac_summary_off">Dirac HD pois päältä</string>
     <string name="pref_dsp_title">Kompressointi</string>
     <string name="pref_dsp_summary_on">Kompressointi päällä</string>
     <string name="pref_dsp_summary_off">Kompressointi pois päältä</string>
